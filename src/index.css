@@ -1,3 +1,8 @@
+/* any css that needs to effect the global project goes here
+you can add additional css files alongside displays or components
+-- when applying css to components try to use the css files within multiple components
+--ex: forms or buttons. Forms usually have a very similiar css one to the next so you can use one css page
+to hold all the shared css classes or elements for those similiar components */
 body {
   margin: 0;
   padding: 0;
