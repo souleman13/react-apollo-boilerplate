@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import {graphql} from 'react-apollo'
+
+import {SubmitButton} from '../buttons'
 import {mutation1} from '../../services/mutation'
 
 //basic form component for login screen display
@@ -36,7 +38,7 @@ class LoginForm extends Component {
                 }} >
                     <input type='text' placeholder='username' onChange={e => this.setState({user: e.target.value})} />
                     <input type='password' placeholder='pw' onChange={e => this.setState({pw: e.target.value})} />
-                    <button type='submit' />
+                    <SubmitButton />
                 </form>
             </section>
         )

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import {ClassButton} from '../components/buttons'
+
 //display component ready for router
 //it is common for displays to run queries (read data),
 //less very rare for them run mutation (do something: ex. update, delete)
@@ -17,6 +19,7 @@ export default class extends Component {
         return (
             <main>
                 Dashboard
+                <ClassButton message='Hello World' label='Click Me!' />
             </main>
         )
     }
