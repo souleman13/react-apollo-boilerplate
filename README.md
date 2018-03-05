@@ -1,45 +1,45 @@
-#installation 
+# installation 
 
 1. clone project
 2. npm install
 3. npm start
 
-#practices and patterns
+# practices and patterns
 
-###imports
+### imports
 imports are seperated into the following groups:
 1. npm packages
 2. user created components
 3. css library or framework components
 4. css files
 
-###components
-- it is common for components to run mutations (do something: ex. update, delete, redirect),
+### components
+it is common for components to run mutations (do something: ex. update, delete, redirect),
 less common for them to query (read or display something)
 this logic is this opposite for displays, which will almost never handle mutations
-
-- recomended practice within this boilerplate is for
+<br>
+recomended practice within this boilerplate is for
 the root tag of a components render() to be a `<section>` tag. ex below.
 this helps keep code semantic, readable, and not div overloaded
 
-###displays
-- it is common for displays to run queries (read data),
+### displays
+it is common for displays to run queries (read data),
 very rare for them run mutations (do something: ex. update, delete)
 displays trend to import components when they need work done
 this logic is opposite for components, which will query less often,
 however gating queries behind certain components
 rather than running larger queries on displays can improve performance
-
-- recomended practice within this boilerplate is for
+<br>
+recomended practice within this boilerplate is for
 the root tag of a displays render() to be a `<main>` tag. ex below
 this helps keep code semantic, readable, and not div overloaded
 
-###authorization
+### authorization
 - auth is set up on a per-request basis
 in which you must get the auth token from local storage and 
 attach it to the header of each request
 
-#Create React App auto-generated documentation 
+# Create React App auto-generated documentation 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
