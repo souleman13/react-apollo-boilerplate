@@ -1,3 +1,4 @@
+Welcome to your react-apollo app!
 # installation 
 
 1. clone project
@@ -19,7 +20,7 @@ less common for them to query (read or display something)
 this logic is this opposite for displays, which will almost never handle mutations
 <br>
 recomended practice within this boilerplate is for
-the root tag of a components render() to be a `<section>` tag. ex below.
+the root tag of a components render() to be a ``<section>`` tag. ex below.
 this helps keep code semantic, readable, and not div overloaded
 
 ### displays
@@ -31,7 +32,7 @@ however gating queries behind certain components
 rather than running larger queries on displays can improve performance
 <br>
 recomended practice within this boilerplate is for
-the root tag of a displays render() to be a `<main>` tag. ex below
+the root tag of a displays render() to be a ``<main>`` tag. ex below
 this helps keep code semantic, readable, and not div overloaded
 
 ### authorization
