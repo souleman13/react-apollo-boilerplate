@@ -6,10 +6,10 @@ import { setContext } from 'apollo-link-context'
 //apollo configuration here
 const endpoint = new HttpLink({ uri: '__YOUR__GRAPHQL__ENDPOINT__' })
 
-//basic auth setup
-//graphql/apollo tends to set up auth on a per-request basis
-//in which you must get the auth token from local storage and 
-//attach it to the header of each request
+// basic auth setup
+// graphql/apollo auth is set up on a per-request basis
+// in which you must get the auth token from local storage and 
+// attach it to the header of each request
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
   const token = localStorage.getItem('token')
