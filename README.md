@@ -19,7 +19,8 @@ imports are seperated into the following groups:
 it is common for components to run mutations (do something: ex. update, delete, redirect),
 less common for them to query (read or display something)
 this logic is this opposite for displays, which will almost never handle mutations
-<br>
+
+
 recomended practice within this boilerplate is for
 the root tag of a components render() to be a ``<section>`` tag. ex below.
 this helps keep code semantic, readable, and not div overloaded
@@ -31,7 +32,8 @@ displays trend to import components when they need work done
 this logic is opposite for components, which will query less often,
 however gating queries behind certain components
 rather than running larger queries on displays can improve performance
-<br>
+
+
 recomended practice within this boilerplate is for
 the root tag of a displays render() to be a ``<main>`` tag. ex below
 this helps keep code semantic, readable, and not div overloaded
@@ -44,7 +46,10 @@ attach it to the header of each request
 # Create React App auto-generated documentation
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Below you will find some information on how to perform common tasks.<br>
+
+Below you will find some information on how to perform common tasks.
+
+
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
 ## Table of Contents
