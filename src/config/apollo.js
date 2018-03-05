@@ -12,7 +12,7 @@ const endpoint = new HttpLink({ uri: '__YOUR__GRAPHQL__ENDPOINT__' })
 //attach it to the header of each request
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
-  const token = localStorage.getItem('token');
+  const token = localStorage.getItem('token')
   // return the headers to the context so httpLink can read them
   return {
     headers: {
@@ -22,6 +22,9 @@ const authLink = setContext((_, { headers }) => {
   }
 })
 
+//there may be other middleware that needs to be implemented here
+
+//exporting out the configured client
 export const client = new ApolloClient({
     link: authLink.concat(endpoint),
     cache: new InMemoryCache()
